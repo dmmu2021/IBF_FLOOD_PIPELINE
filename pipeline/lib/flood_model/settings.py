@@ -15,10 +15,10 @@ import ast
 try:
     COUNTRY_CODES = ast.literal_eval(os.getenv("COUNTRY_CODES_LIST"))
 
-    ADMIN_LOGIN = os.getenv("ADMIN_LOGIN")
+    ADMIN_LOGIN = os.getenv("ADMIN-LOGIN")
 
-    IBF_PASSWORD=os.getenv("IBF_PASSWORD")
-    IBF_URL =os.getenv("IBF_URL")
+    IBF_PASSWORD=os.getenv("IBF-PASSWORD")
+    IBF_URL =os.getenv("IBF-URL")
  
     #GLOFAS_USER =os.getenv("GLOFAS_USER")
     #GLOFAS_PW =os.getenv("GLOFAS_PW")
