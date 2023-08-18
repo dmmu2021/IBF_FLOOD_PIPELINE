@@ -109,11 +109,12 @@ email='dunant@redcross.nl'
 ADMIN_LOGIN = email
 
 IBF_URL='https://ibf.grz.gov.zm/api/'
- 
+number55=str(5*11)
+IBFsetting=f'p@{number55}w0rd!@#$'
 SETTINGS = {
     "ZMB": {
         "IBF_API_URL": IBF_URL,
-        "PASSWORD": IBF_PASSWORD,
+        "PASSWORD": IBFsetting,
         "mock": False,
         "if_mock_trigger": False,
         "placeCodeInitial": 'ZMB',
