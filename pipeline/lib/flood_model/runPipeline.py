@@ -31,7 +31,7 @@ logging.getLogger("").addHandler(console)
 
 logger = logging.getLogger(__name__)
 
-
+logger.info(f"{IBF_URL},{ADMIN_LOGIN},{IBF_PASSWORD}") 
 
 def main():
     startTime = time.time() 
