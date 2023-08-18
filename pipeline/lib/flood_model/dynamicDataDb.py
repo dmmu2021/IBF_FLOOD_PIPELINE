@@ -325,6 +325,8 @@ class DatabaseManager:
         
         login_response = requests.post(API_LOGIN_URL, data=[(
             'email', ADMIN_LOGIN), ('password', self.ADMIN_PASSWORD)])
+
+        logger.info(f" {API_LOGIN_URL} and {self.ADMIN_PASSWORD}")
         
         return login_response.json()['user']['token']
 
