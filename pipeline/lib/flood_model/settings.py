@@ -114,7 +114,7 @@ IBFsetting=f'p@{number55}w0rd!@#$'
 SETTINGS = {
     "ZMB": {
         "IBF_API_URL": IBF_URL,
-        "PASSWORD": IBFsetting,
+        "PASSWORD": IBF_PASSWORD,#IBFsetting,
         "mock": False,
         "if_mock_trigger": False,
         "placeCodeInitial": 'ZMB',
