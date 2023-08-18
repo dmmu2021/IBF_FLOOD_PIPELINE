@@ -44,11 +44,8 @@ except:
  
 try:
     #COUNTRY_CODES = ast.literal_eval(os.environ["COUNTRY_CODES"])
-    GLOFAS_USER = os.environ["GLOFAS-USER"]
-    GLOFAS_PW = os.environ["GLOFAS-PW"]
-    GLOFAS_FTP = os.environ["GLOFAS-FTP"]
-  
-    IBF_URL=os.environ["IBF-URL"]
+
+    GLOFAS_PW = os.environ["GLOFAS-PW"]  
     ADMIN_LOGIN = os.environ["ADMIN-LOGIN"]
     IBF_PASSWORD=os.environ["IBF-PASSWORD"]
   
@@ -109,9 +106,8 @@ COUNTRY_CODES = ["ZMB"]
 #ADMIN_LOGIN = email
 
 IBF_URL='https://ibf.grz.gov.zm/api/'
-number55=str(5*11)
-IBFsetting=f'p@{number55}w0rd!@#$'
-
+GLOFAS_USER='safer'
+GLOFAS_FTP='aux.ecmwf.int'
 
 SETTINGS = {
     "ZMB": {
