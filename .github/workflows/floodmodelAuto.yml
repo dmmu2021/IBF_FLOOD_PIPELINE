@@ -2,7 +2,7 @@ name: run-flood-model
 
 on:
   schedule:
-    - cron: "0 8 1 * *"
+    - cron: "0 20 * * *"
 jobs:
   run-flood-model:
     runs-on: ubuntu-20.04
@@ -80,16 +80,9 @@ jobs:
     
     - name: Run script
       env:
-        ADMIN_LOGIN: ${{ secrets.ADMIN_LOGIN }}
-        PRIVATE_KEY_ID: ${{ secrets.PRIVATE_KEY_ID }}
-        PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
-        CLIENT_EMAIL: ${{ secrets.CLIENT_EMAIL }}
-        GLOFAS_PW: ${{ secrets.GLOFAS_PW }}
-        GLOFAS_USER: ${{ secrets.GLOFAS_USER }}
-        GOOGLE_DRIVE_DATA_URL: ${{ secrets.GOOGLE_DRIVE_DATA_URL }}
-        IBF_URL: ${{ secrets.IBF_URL }}
-        IBF_PASSWORD: ${{ secrets.IBF_PASSWORD }}
-        COUNTRY_CODES: ${{ secrets.COUNTRY_CODES }}   
+        ADMIN-LOGIN: ${{ secrets.ADMINLOGIN }}
+        GLOFAS-PW: ${{ secrets.GLOFASPW }}
+        IBF-PASSWORD: ${{ secrets.IBFPASSWORD }}   
       run: |
         run-flood-model
       working-directory: ${{ env.running-directory }}
