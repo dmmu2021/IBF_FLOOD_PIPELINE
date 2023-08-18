@@ -84,12 +84,12 @@ jobs:
     
     - name: Run script
       env:
-        ADMIN_LOGIN: ${{ secrets.ADMIN_LOGIN }}
-        GLOFAS_PW: ${{ secrets.GLOFAS_PW }}
-        GLOFAS_FTP: ${{ secrets.GLOFAS_FTP }}
-        GLOFAS_USER: ${{ secrets.GLOFAS_USER }}
-        IBF_URL: ${{ secrets.IBF_URL }}
-        IBF_PASSWORD: ${{ secrets.IBF_PASSWORD }} 
+        ADMIN-LOGIN: ${{ secrets.ADMIN_LOGIN }}
+        GLOFAS-PW: ${{ secrets.GLOFAS_PW }}
+        GLOFAS-FTP: ${{ secrets.GLOFAS_FTP }}
+        GLOFAS-USER: ${{ secrets.GLOFAS_USER }}
+        IBF-URL: ${{ secrets.IBF_URL }}
+        IBF-PASSWORD: ${{ secrets.IBF_PASSWORD }} 
       run: |
         run-flood-model
       working-directory: ${{ env.running-directory }}
