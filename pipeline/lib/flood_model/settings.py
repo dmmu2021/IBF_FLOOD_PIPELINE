@@ -44,14 +44,14 @@ except:
  
 try:
     #COUNTRY_CODES = ast.literal_eval(os.environ["COUNTRY_CODES"])
-    GLOFAS_USER = os.environ.get("GLOFAS-USER")
-    GLOFAS_PW = os.environ.get("GLOFAS-PW")
-    GLOFAS_FTP = os.environ.get("GLOFAS-FTP")
-    
-    IBF_URL=os.environ.get("IBF-URL")
-    ADMIN_LOGIN = os.environ.get("ADMIN-LOGIN")
-    IBF_PASSWORD=os.environ.get("IBF-PASSWORD")
-    
+    GLOFAS_USER = os.environ["GLOFAS-USER"]
+    GLOFAS_PW = os.environ["GLOFAS-PW"]
+    GLOFAS_FTP = os.environ["GLOFAS-FTP"]
+  
+    IBF_URL=os.environ["IBF-URL"]
+    ADMIN_LOGIN = os.environ["ADMIN-LOGIN"]
+    IBF_PASSWORD=os.environ["IBF-PASSWORD"]
+  
     #ZMB_URL=os.environ["ZMB_URL"] 
     #ZMB_PASSWORD=os.environ["ZMB_PASSWORD"]
     
