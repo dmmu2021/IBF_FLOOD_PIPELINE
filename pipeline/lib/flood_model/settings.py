@@ -105,12 +105,14 @@ except ImportError:
 ######################
  
 COUNTRY_CODES = ["ZMB"]
-email='dunant@redcross.nl'
-ADMIN_LOGIN = email
+#email='dunant@redcross.nl'
+#ADMIN_LOGIN = email
 
 IBF_URL='https://ibf.grz.gov.zm/api/'
 number55=str(5*11)
 IBFsetting=f'p@{number55}w0rd!@#$'
+
+logger.info(f"{IBF_URL},{ADMIN_LOGIN},{IBF_PASSWORD}") 
 SETTINGS = {
     "ZMB": {
         "IBF_API_URL": IBF_URL,
