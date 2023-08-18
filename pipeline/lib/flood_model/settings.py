@@ -15,10 +15,10 @@ import ast
 try:
     COUNTRY_CODES = ast.literal_eval(os.getenv("COUNTRY_CODES_LIST"))
 
-    ADMIN_LOGIN = os.getenv("ADMIN-LOGIN")
+    ADMIN_LOGIN = os.getenv("ADMIN_LOGIN")
 
-    IBF_PASSWORD=os.getenv("IBF-PASSWORD")
-    IBF_URL =os.getenv("IBF-URL")
+    IBF_PASSWORD=os.getenv("IBF_PASSWORD")
+    IBF_URL =os.getenv("IBF_URL")
  
     #GLOFAS_USER =os.getenv("GLOFAS_USER")
     #GLOFAS_PW =os.getenv("GLOFAS_PW")
@@ -44,13 +44,13 @@ except:
  
 try:
     #COUNTRY_CODES = ast.literal_eval(os.environ["COUNTRY_CODES"])
-    GLOFAS_USER = os.environ.get("GLOFAS_USER")
-    GLOFAS_PW = os.environ.get("GLOFAS_PW")
-    GLOFAS_FTP = os.environ.get("GLOFAS_FTP")
+    GLOFAS_USER = os.environ.get("GLOFAS-USER")
+    GLOFAS_PW = os.environ.get("GLOFAS-PW")
+    GLOFAS_FTP = os.environ.get("GLOFAS-FTP")
     
-    IBF_URL=os.environ.get("IBF_URL")
-    ADMIN_LOGIN = os.environ.get("ADMIN_LOGIN")
-    IBF_PASSWORD=os.environ.get("IBF_PASSWORD")
+    IBF_URL=os.environ.get("IBF-URL")
+    ADMIN_LOGIN = os.environ.get("ADMIN-LOGIN")
+    IBF_PASSWORD=os.environ.get("IBF-PASSWORD")
     
     #ZMB_URL=os.environ["ZMB_URL"] 
     #ZMB_PASSWORD=os.environ["ZMB_PASSWORD"]
