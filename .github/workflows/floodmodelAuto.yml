@@ -2,7 +2,7 @@ name: run-flood-model
 
 on:
   schedule:
-    - cron: "0 20 * * *"
+    - cron: "0 21 * * *"
 jobs:
   run-flood-model:
     runs-on: ubuntu-20.04
