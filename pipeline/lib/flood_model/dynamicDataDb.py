@@ -325,10 +325,7 @@ class DatabaseManager:
         
         login_response = requests.post(API_LOGIN_URL, data=[(
             'email', ADMIN_LOGIN), ('password', self.ADMIN_PASSWORD)])
-
-        logger.info(f" {API_LOGIN_URL}, {ADMIN_LOGIN} and {self.ADMIN_PASSWORD}")
-        x=login_response.text
-        logger.info(f"{x}")
+    
         return login_response.json()['user']['token']
 
     def getDataFromDatalake(self, path):
